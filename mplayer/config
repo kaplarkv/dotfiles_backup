@@ -1,0 +1,26 @@
+# Write your default config options here!
+# use alsa for audio output
+ao=alsa
+# use X11 for video output
+vo=xv
+# Set subtitle file encoding
+unicode=yes
+utf8=yes
+# Seek in file that is downloading
+#idx=yes
+# Load all subs from current directory
+sub-fuzziness=2
+# Subtitles language priority
+#slang=en,sr
+# Audio language priority
+# alang=jp,en
+# Default to fonts in subtitles files, usefull for subtitles
+# that use different styles
+ass=yes
+embeddedfonts=yes
+fontconfig=yes
+# Little console output
+really-quiet="1"
+# Douuble buffering (recommended for subtitles)
+double="yes"
+

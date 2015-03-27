@@ -1,0 +1,55 @@
+out_to_x no
+own_window no
+out_to_console yes
+background no
+update_interval 1
+total_run_times 0
+max_text_width 0
+short_units yes
+
+TEXT
+[
+  #Finds out if mpd is running. If it is, it provides 1) the current track and 2) bar status. If mpd isn't running it outputs "Not Running"
+  {
+    "full_text": " [${if_mpd_playing} ${mpd_file} ${mpd_bar} ${else} Not Playing ${endif}]", "color":"\#e4f800"
+  },
+
+  #Shows current memory usage with a bar
+  {
+    "full_text": " RAM:$mem $memperc % ", "color":"\#B58900"
+  },
+
+  #Shows current CPU usage with a bar
+  {
+    "full_text": " CPU: $cpu %", "color":"\#00A9B5"
+  },
+
+  #Shows temperature of CPU.
+  {
+    "full_text": " Core 0: ${exec sensors | grep 'Core 0' | cut -c15-17 | sed '/^$/d'}°C Core 2: ${exec sensors | grep 'Core 2' | cut -c15-17 | sed '/^$/d'}°C ","color":"\#33CC99"
+  },
+
+  #Shows upime
+  {
+    "full_text": " ↑ [${uptime}] ","color": "\#dc322f"
+  },
+  
+  # Battery
+  {"full_text":"BAT","color":"\#802828","separator":false,"separator_block_width":6},\
+  {"full_text":"${if_match ${battery_percent}<30}${battery_percent}%  ","color":"\#802828",,"separator_block_width":6},\
+  {"full_text":"${else}"},\
+  {"full_text":"${if_match ${battery_percent}<70}${battery_percent}%  ","color":"\#b27d12","separator_block_width":6},\
+  {"full_text":"${else}"},\
+  {"full_text":"${if_match ${battery_percent}>=70}${battery_percent}%  ","color":"\#1793D1","separator_block_width":6},\
+  {"full_text":"${endif}${endif}${endif}"},
+
+  #Finds current volume. May need modified depending on your setup
+  {
+    "full_text": " ♪ ${exec amixer get Master | grep -o "\[.*%\]"} ", "color":"\#268BD2"
+  },
+
+  #Shows time
+  {
+    "full_text": " [${time %a %d %b} ${time %H:%M:%S}] ","color": "\#2fdc57"
+  }
+],

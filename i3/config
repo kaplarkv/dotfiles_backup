@@ -1,0 +1,242 @@
+#Variables
+set $mod Mod4
+
+#worspace variables
+set $ws1 1: www
+set $ws2 2: media
+set $ws3 3: term
+set $ws4 4: prog
+set $ws5 5: other
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below. ISO 10646 = Unicode
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font xtf:Inconsolata 8
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+#Keybindings
+
+#Application launching
+
+# terminal(urxvt)
+bindsym $mod+Return exec --no-startup-id urxvt
+
+# firefox
+bindsym $mod+c exec firefox
+
+#dmenu (a program launcher)
+bindsym $mod+d exec --no-startup-id dmenu_run -p ">>" -fn 'Dejavu Sans Mono: 10' -nb '#111111' -nf '#00AFDA' -sb '#111111' -sf '#E7E8E9'
+
+#ranger
+bindsym $mod+p exec urxvt -e ranger
+
+#screenshot
+bindsym Print exec scrot '%Y-%m-%d-%T.png' -e 'mv $f ~/Pictures/PrintScreen'
+
+bindsym $mod+g exec gvim
+
+#Application on workspace
+assign [class="URxvt"] $ws3
+assign [class="Firefox"] $ws1
+assign [class="MPlayer"] $ws2
+#assign [name="ranger"] $ws4
+assign [class="feh"] $ws2
+for_window [window_role="pop-up"] floating enable, absolute center
+
+#Volume Control
+bindsym $mod+Control+Up exec amixer set Master 5.0%+
+bindsym $mod+Control+Down exec amixer set Master 5.0%-
+
+#Focus
+# kill focused window
+bindsym $mod+q kill
+
+# change focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+#Containers
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+# focus the child container
+#bindsym $mod+d focus child
+
+#new window default border
+#new_window normal
+new_window 1pixel
+new_float normal
+
+#hide edge borders
+hide_edge_borders both
+
+#Workspaces
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+
+#bindsym $mod+6 workspace 6
+#bindsym $mod+7 workspace 7
+#bindsym $mod+8 workspace 8
+#bindsym $mod+9 workspace 9
+#bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+
+#bindsym $mod+Shift+6 move container to workspace 6
+#bindsym $mod+Shift+7 move container to workspace 7
+#bindsym $mod+Shift+8 move container to workspace 8
+#bindsym $mod+Shift+9 move container to workspace 9
+#bindsym $mod+Shift+0 move container to workspace 10
+#back and forth
+
+workspace_auto_back_and_forth yes
+
+#fast way to change workspace
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
+#Reload, restart, exit
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+#MODS
+
+#Resize
+# resize window (you can also use the mouse for that)
+mode "resize" {
+	# These bindings trigger as soon as you enter the resize mode
+	# Pressing left will shrink the window’s width.
+	# Pressing right will grow the window’s width.
+	# Pressing up will shrink the window’s height.
+	# Pressing down will grow the window’s height.
+	bindsym j resize shrink width 10 px or 10 ppt
+	bindsym k resize grow height 10 px or 10 ppt
+	bindsym l resize shrink height 10 px or 10 ppt
+	bindsym semicolon resize grow width 10 px or 10 ppt
+	
+	# same bindings, but for the arrow keys
+	bindsym Left resize shrink width 10 px or 10 ppt
+	bindsym Down resize grow height 10 px or 10 ppt
+	bindsym Up resize shrink height 10 px or 10 ppt
+	bindsym Right resize grow width 10 px or 10 ppt
+	
+	# back to normal: Enter or Escape
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+#Exit
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+	
+	bindsym l exec --no-startup-id i3exit lock, mode "default"
+	bindsym e exec --no-startup-id i3exit logout, mode "default"
+	bindsym s exec --no-startup-id i3exit suspend, mode "default"
+	bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+	bindsym r exec --no-startup-id i3exit reboot, mode "default"
+	bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+	
+	# back to normal: Enter or Escape
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+bindsym $mod+Pause mode "$mode_system"
+
+#Colors
+
+#class border background text
+client.focused #424242 #424242 #cad0c4 #cad0c4
+client.unfocused #222222 #151515 #605e56
+client.focused_inactive #2D2D2D #151515 #2D2D2D
+client.urgent #a5a5a5 #a5a5a5 #1E1E1E
+client.background #161616
+
+#Bar
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+  status_command ~/.i3/i3-conky-initscript.sh
+  tray_output output
+  position bottom
+  mode dock
+  font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+  font xtf:Inconsolata 8
+  colors {
+    background #161616
+    statusline #2D2D2D
+    focused_workspace #2D2D2D #2D2D2D #ffffff
+    active_workspace #2D2D2D #2D2D2D #cad0c4
+    inactive_workspace #161616 #1E1E1E #605e56
+    urgent_workspace #2d2d2d #2d2d2d #cad0c4
+  }
+}
+
+#Startup
+exec --no-startup-id geh --bg-scale ~/Pictures/cowboy-bebop.png
+exec --no-startup-id numlockx
+
+#Ovo je za snimanje layout-a prozora
+#Treba ga povezati na nake precije
+#Zahteva i da se instaliraju `perl-anyevent-i3` i `perl-json-xs`
+#i3-save-tree --workspace n > ~/.config/i3/workspace-n.json
+# restore layout, maybe bind this to a shortcut or execute at startup
+#i3-msg "workspace n; append_layout ~/.config/i3/workspace-n.json"

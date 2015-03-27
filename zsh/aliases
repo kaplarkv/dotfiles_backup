@@ -1,0 +1,32 @@
+# pacman
+alias spm='sudo pacman'
+
+# aur
+
+# ls
+alias ls='ls -F --color=always'
+alias la='ls -A'
+alias ll='ls -l'
+
+# grep
+alias grep='grep --color=always'
+
+# wireless
+alias wireless='sudo wifi-menu wlp2s0'
+
+# youtube-dl
+alias youtube-dl='youtube-dl -x --audio-format mp3'
+
+# moving around
+alias cdb='cd -'
+alias cls='clear;ls'
+alias cla='clear;la'
+alias cll='clear;ll'
+alias ...='../../'
+alias ....='../../../'
+alias .....='../../../../'
+
+# vim
+alias ve='vim ~/.vimrc'
+
+
