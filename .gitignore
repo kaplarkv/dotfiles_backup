@@ -8,3 +8,4 @@ ncmpcpp/error.log
 vim/autoload
 vim/backups
 vim/plugged
+vim/.netrwhist

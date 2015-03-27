@@ -38,7 +38,8 @@ set cursorline " Highlight current line
 "Ruler
 if has('cmdline_info')
 	set ruler " Show the ruler
-	" set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " A ruler on steroids
+	set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%{fugitive#statusline()}%=%c,%l/%L\ %P
+  " set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " A ruler on steroids
 	set showcmd " Show partial commands in status line and Selected characters/lines in visual mode
 endif
 
