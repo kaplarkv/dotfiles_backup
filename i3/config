@@ -215,7 +215,7 @@ client.background #161616
 # finds out, if available)
 bar {
   status_command ~/.i3/i3-conky-initscript.sh
-  tray_output output
+  #tray_output output
   position bottom
   mode dock
   font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -233,6 +233,7 @@ bar {
 #Startup
 exec --no-startup-id geh --bg-scale ~/Pictures/cowboy-bebop.png
 exec --no-startup-id numlockx
+exec --no-startup-id parcellite
 
 #Ovo je za snimanje layout-a prozora
 #Treba ga povezati na nake precije
