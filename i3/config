@@ -188,12 +188,12 @@ bindsym $mod+r mode "resize"
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
 	
-	bindsym l exec --no-startup-id i3exit lock, mode "default"
-	bindsym e exec --no-startup-id i3exit logout, mode "default"
-	bindsym s exec --no-startup-id i3exit suspend, mode "default"
-	bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-	bindsym r exec --no-startup-id i3exit reboot, mode "default"
-	bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+	bindsym l exec --no-startup-id ~/dotfiles/bin/i3exit lock, mode "default"
+	bindsym e exec --no-startup-id ~/dotfiles/bin/i3exit logout, mode "default"
+	bindsym s exec --no-startup-id ~/dotfiles/bin/i3exit suspend, mode "default"
+	bindsym h exec --no-startup-id ~/dotfiles/bin/i3exit hibernate, mode "default"
+	bindsym r exec --no-startup-id ~/dotfiles/bin/i3exit reboot, mode "default"
+	bindsym Shift+s exec --no-startup-id ~/.dotfiles/bin/i3exit shutdown, mode "default"
 	
 	# back to normal: Enter or Escape
 	bindsym Return mode "default"
@@ -231,7 +231,7 @@ bar {
 }
 
 #Startup
-exec --no-startup-id geh --bg-scale ~/Pictures/cowboy-bebop.png
+exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/cowboy-bebop.jpg
 exec --no-startup-id numlockx
 exec --no-startup-id parcellite
 
