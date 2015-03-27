@@ -35,4 +35,5 @@ echo "Creating symlink to $file in home directory."
 ln -s $dir/$file ~/.$file
 done
 
-ln -s $dir/cower ~/.config/cower
+mv ~/.config/cower ~/dotfiles_old
+ln -s $dir/cower ~/.config/
