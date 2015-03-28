@@ -15,16 +15,16 @@ alias grep='grep --color=always'
 alias wireless='sudo wifi-menu wlp2s0'
 
 # youtube-dl
-alias youtube-dl='youtube-dl -x --audio-format mp3'
+alias youtube-mp3='youtube-dl -x --audio-format mp3'
 
 # moving around
 alias cdb='cd -'
 alias cls='clear;ls'
 alias cla='clear;la'
 alias cll='clear;ll'
-alias ...='../../'
-alias ....='../../../'
-alias .....='../../../../'
+alias -g ...='../../'
+alias -g ....='../../../'
+alias -g .....='../../../../'
 
 # vim
 alias ve='vim ~/.vimrc'
