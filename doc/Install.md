@@ -60,7 +60,7 @@ Plugins used:
 Keymaps:
 
 * w!! - sudo write
-* <leader>u - toggle Gundo
+* \<leader\>u - toggle Gundo
 * Alt keymaps - Not working in terminal vim(find fix)
   - <A-)> - find ) on line and change inside (works for ()[]'") 
   - <A-number> - pick tab(from 0 to 9)
