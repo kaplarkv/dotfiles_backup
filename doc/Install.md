@@ -17,6 +17,7 @@ I use i3 as my window manager
 ## Terminal
 
 * rxvt-unicode
+  - urxvt-perls - perl extentions for urxvt
 * zsh
   - zsh-completions
 * ranger
