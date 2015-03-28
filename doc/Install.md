@@ -58,17 +58,6 @@ Plugins used:
   - [vim-unimpaired](https://github.com/tpope/vim-unimpaired)
   - [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 
-Keymaps:
-
-* w!! - sudo write
-* \<leader\>u - toggle Gundo
-* Alt keymaps - Not working in terminal vim(find fix)
-  - <A-)> - find ) on line and change inside (works for ()[]'") 
-  - <A-number> - pick tab(from 0 to 9)
-* vv - vertical split
-* ss - horizontal split
-* <C-Arrow> - resize window
-
 File [vimother](vimother.md) contains plugins and settings that are
 interesting, but not currentky used.
 
