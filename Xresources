@@ -52,10 +52,13 @@ URxvt*color15: #ffffff! Compile xft: Attempt to find a visual with the given bit
 ! Fonts
 
 !Inconsolata
-URxvt.font: xft:Inconsolata-12
-URxvt.boldFont: xft:Inconsolata-12
-URxvt.letterSpace: -1
+!URxvt.font: xft:Inconsolata-12
+!URxvt.boldFont: xft:Inconsolata-12
+!URxvt.letterSpace: -1
 
+URxvt.font: xft:Source Code Pro:pixelsize=15:style=Regular
+URxvt.boldFont: xft:Source Code Pro:pixelsize=15:style=Regular
+URxvt.letterSpace: -1
 
 ! XTerm
 
