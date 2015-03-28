@@ -13,6 +13,6 @@ if has("gui_running")
   autocmd VimEnter * set guitablabel=%N:\ %t\ %M
   set lines=60
   set columns=190
-  set guifont=Inconsolata\ 12
+  set guifont=Source\ Code\ Pro\ 11
   colorscheme Mustang
 endif
