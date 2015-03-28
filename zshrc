@@ -1,5 +1,5 @@
 zstyle ':completion:*' completer _complete _ignored _approximate
-zstyle ':completion:*' max-errors 3
+zstyle ':completion:*' max-errors 2
 zstyle :compinstall filename '/home/kaplar/.zshrc'
 zstyle ':completion:*' menu select
 
