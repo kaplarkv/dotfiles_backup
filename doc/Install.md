@@ -26,6 +26,7 @@ I use i3 as my window manager
 * tar, unrar, unzip
 * lm-sensors - CPU temperature, used in conky
 * youtube-dl
+* transmission-cli
 
 ## Firefox 
 
