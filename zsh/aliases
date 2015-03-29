@@ -29,4 +29,12 @@ alias -g .....='../../../../'
 # vim
 alias ve='vim ~/.vimrc'
 
+# submarine
+alias sub='submarine -l en'
 
+# transmission-cli
+alias torstart='transmission-daemon'
+alias toradd='transmission-remote --add'
+alias torlist='transmission-remote --list'
+alias toropen='firefox http://localhost:9091'
+alias torexit='transmission-remote --exit'
