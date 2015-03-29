@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Open magnet links from browser(firefox)
+# In case firefox doesn't give option for magnets fix can be found here
+# http://www.pclinuxos.com/forum/index.php/topic,103267.msg881252.html?PHPSESSID=minihet61c8eul1rm9298bs4j7#msg881252
+
+# If daemon is not running start it
+if [ ! $(pidof transmission-daemon ) ]; then
+  /usr/bin/transmission-daemon
+fi
+
+# Without sleep add command is executed before daemon is started
+sleep 1
+
+/usr/bin/transmission-remote --add "$1"
+
+/usr/bin/firefox http://localhost:9091
