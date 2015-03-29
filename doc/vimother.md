@@ -1,73 +1,66 @@
-Opcije i plugin-ovi koje trenutno nemam u vim-u ali big mogao da ih dodam
+# Interesting plugins
 
-"Rails
-"Plugin 'groenewege/vim-less'
-"Plugin 'tpope/vim-haml'
-"Plugin 'tpope/vim-cucumber'
-"Plugin 'garbas/vim-snipmate'
-"Plugin 'honza/vim-snippets'
+## General
 
+ * [splitjoin.vim](https://github.com/AndrewRadev/splitjoin.vim)
+ * [vim-endwise](https://github.com/tpope/vim-endwise)
+ * [camelcasemotion](https://github.com/vim-scripts/camelcasemotion)
+ * [tagbar](https://github.com/majutsushi/tagbar)
+ * [vim-expand-region](https://github.com/terryma/vim-expand-region)
 
-"Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'scrooloose/nerdtree' ili vimfiler ili tako nesto
-Plugin 'kien/ctrlp.vim' ili neka od alternativa unite
-"Plugin 'xolox/vim-misc'
-"Plugin 'xolox/vim-session'
+ * [neocomplete.vim](https://github.com/Shougo/neocomplete.vim)
+ * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+ * [syntastic](https://github.com/scrooloose/syntastic)
+ * [supertab](https://github.com/ervandew/supertab)
 
-youcompleteme
-syntacsic
+ * [limelight.vim](https://github.com/junegunn/limelight.vim)
+ * [goyo.vim](https://github.com/junegun/goyo.vim)
 
+ * [YankRing](https://github.com/skwp/YankRing)
+ * [tabular](https://github.com/godlygeek/tabular)
+ * [NrrwRgn](https://github.com/chrisbra/NrrwRgn)
+ * [vim-abolish](https://github.com/tpope/vim-abolish)
 
-"Plugin 'ecomba/vim-ruby-refactoring'
-"Plugin 'tpope/vim-rails'
-"Plugin 'tpope/vim-rake'
-"Plugin 'vim-ruby/vim-ruby'
-"Plugin 'Keithbsmiley/rspec.vim'
-"Plugin 'skwp/vim-spec-finder'
-"Plugin 'ck3g/vim-change-hash-syntax'
-"Plugin 'tpope/vim-bundler'
+ * [nerdtree or vimfiler ](https://github.com/scrooloose/nerdtree or vimfiler )
+ * [ctrlp.vim or unite](https://github.com/kien/ctrlp.vim or unite)
 
-Plugin 'rking/ag.vim
-Plugin 'nelstrom/vim-visual-star-search'
-Plugin 'Lokaltog/vim-easymotion''
+Some plugin for interaction with tmux
 
+## Search
 
-"Plugin "austintaylor/vim-indentobject"
-"Plugin "bootleq/vim-textobj-rubysymbol"
-"Plugin "coderifous/textobj-word-column.vim"
-"Plugin "kana/vim-textobj-datetime"
-"Plugin "kana/vim-textobj-entire"
-"Plugin "kana/vim-textobj-function"
-"Plugin "kana/vim-textobj-user"
-"Plugin "lucapette/vim-textobj-underscore"
-"Plugin "nathanaelkane/vim-indent-guides"
-"Plugin "nelstrom/vim-textobj-rubyblock"
-"Plugin "thinca/vim-textobj-function-javascript"
-"Plugin "vim-scripts/argtextobj.vim"
+ * [ag.vim](https://github.com/rking/ag.vim)
+ * [vim-visual-star-search](https://github.com/nelstrom/vim-visual-star-search)
+ * [vim-easymotion'](https://github.com/Lokaltog/vim-easymotion')
 
-Plugin 'AndrewRadev/splitjoin.vim'
-Plugin 'vim-scripts/matchit.zip'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tomtom/tlib_vim'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'bogado/file-line'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'tommcdo/vim-exchange'
-"Plugin 'tpope/vim-abolish'
-"Plugin 'tpope/vim-repeat'
-"Plugin 'godlygeek/tabular
-"Plugin 'briandoll/change-inside-surroundings.vim'
-"Plugin 'vim-scripts/camelcasemotion'
-"Plugin 'chrisbra/NrrwRgn'
-"Plugin 'skwp/YankRing'
-"Plugin 'vim-scripts/sudo.vim'
-"Plugin 'majutsushi/tagbar'
-"Plugin 'Shougo/neocomplete.vim'
-"Plugin 'junegunn/goyo.vim'
+## C++
 
+* [Cpp11-Syntax-Support](https://github.com/vim-scripts/Cpp11-Syntax-Support)
+* [STL-Syntax](https://github.com/Mizuchi/STL-Syntax)
 
-jlanzarotta/bufexplorer
+## Rails and Ruby
 
-vim-scripts/a.vim
-supertab
+ * [vim-less](https://github.com/groenewege/vim-less)
+ * [vim-haml](https://github.com/tpope/vim-haml)
+ * [vim-cucumber](https://github.com/tpope/vim-cucumber)
+ * [vim-ruby-refactoring](https://github.com/ecomba/vim-ruby-refactoring)
+ * [vim-rails](https://github.com/tpope/vim-rails)
+ * [vim-rake](https://github.com/tpope/vim-rake)
+ * [vim-ruby](https://github.com/vim-ruby/vim-ruby)
+ * [rspec.vim](https://github.com/Keithbsmiley/rspec.vim)
+ * [vim-spec-finder](https://github.com/skwp/vim-spec-finder)
+ * [vim-change-hash-syntax](https://github.com/ck3g/vim-change-hash-syntax)
+ * [vim-bundler](https://github.com/tpope/vim-bundler)
+
+## Text Objects
+ * [vim-indentobject](https://github.com/austintaylor/vim-indentobject)
+ * [vim-textobj-rubysymbol](https://github.com/bootleq/vim-textobj-rubysymbol)
+ * [textobj-word-column.vim](https://github.com/coerifous/textobj-word-column.vim)
+ * [vim-textobj-datetime](https://github.com/kana/vim-textobj-datetime)
+ * [vim-textobj-entire](https://github.com/kana/vim-textobj-entire)
+ * [vim-textobj-function](https://github.com/kana/vim-textobj-function)
+ * [vim-textobj-user](https://github.com/kana/vim-textobj-user)
+ * [vim-textobj-underscore](https://github.com/lucapette/vim-textobj-underscore)
+ * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
+ * [vim-textobj-rubyblock](https://github.com/nelstrom/vim-textobj-rubyblock)
+ * [vim-textobj-function-javascript](https://github.com/thinca/vim-textobj-function-javascript)
+ * [argtextobj.vim](https://github.com/vim-scripts/argtextobj.vim)
