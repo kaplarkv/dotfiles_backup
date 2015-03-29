@@ -91,6 +91,9 @@ set listchars=tab:▸\ ,eol:¬
 set autoindent
 set smartindent
 
+" Disable continuation of comments in new lines
+autocmd FileType * setlocal formatoptions-=cro
+
 set smarttab
 set shiftwidth=2 " Indent 2 spaces
 set softtabstop=2
