@@ -52,12 +52,19 @@ Plugins used:
 * Search
   - [vim-indexed-search](https://github.com/henrik/vim-indexed-search)
 * General
+  - [matchit.zip](https://github.com/vim-scripts/matchit.zip)
   - [delimitMate](https://github.com/Raimondi/delimitMate)
   - [Gundo](https://github.com/vim-scripts/Gundo)
   - [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
   - [vim-surround](https://github.com/tpope/vim-surround)
   - [vim-unimpaired](https://github.com/tpope/vim-unimpaired)
+  - [vim-repeat](https://github.com/tpope/vim-repeat)
   - [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
+  - [ultisnips](https://github.com/SirVer/ultisnips)
+  - [vim-exchange](https://github.com/tommcdo/vim-exchange)
+  - [file-line](https://github.com/bogado/file-line)
+  - [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+  - [unite.vim](https://github.com/Shougo/unite.vim)
 
 File [vimother](vimother.md) contains plugins and settings that are
 interesting, but not currentky used.

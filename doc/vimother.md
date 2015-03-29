@@ -14,15 +14,17 @@
  * [supertab](https://github.com/ervandew/supertab)
 
  * [limelight.vim](https://github.com/junegunn/limelight.vim)
- * [goyo.vim](https://github.com/junegun/goyo.vim)
+ * [goyo.vim](https://github.com/junegunn/goyo.vim)
 
- * [YankRing](https://github.com/skwp/YankRing)
+ * [YankRing.vim](https://github.com/vim-scripts/YankRing.vim)
  * [tabular](https://github.com/godlygeek/tabular)
  * [NrrwRgn](https://github.com/chrisbra/NrrwRgn)
  * [vim-abolish](https://github.com/tpope/vim-abolish)
 
- * [nerdtree or vimfiler ](https://github.com/scrooloose/nerdtree or vimfiler )
- * [ctrlp.vim or unite](https://github.com/kien/ctrlp.vim or unite)
+ * [nerdtree](https://github.com/scrooloose/nerdtree)
+  - alternative [vimfiler.vim](https://github.vim/Shougo/vimfiler.vim)
+ * [ctrlp.vim](https://github.com/kien/ctrlp.vim)
+  - alternative [unite.vim](https://github.com/Shougo/unite.vim)
 
 Some plugin for interaction with tmux
 
@@ -30,7 +32,7 @@ Some plugin for interaction with tmux
 
  * [ag.vim](https://github.com/rking/ag.vim)
  * [vim-visual-star-search](https://github.com/nelstrom/vim-visual-star-search)
- * [vim-easymotion'](https://github.com/Lokaltog/vim-easymotion')
+ * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 
 ## C++
 
@@ -52,9 +54,10 @@ Some plugin for interaction with tmux
  * [vim-bundler](https://github.com/tpope/vim-bundler)
 
 ## Text Objects
+
  * [vim-indentobject](https://github.com/austintaylor/vim-indentobject)
  * [vim-textobj-rubysymbol](https://github.com/bootleq/vim-textobj-rubysymbol)
- * [textobj-word-column.vim](https://github.com/coerifous/textobj-word-column.vim)
+ * [textobj-word-column.vim](https://github.com/coderifous/textobj-word-column.vim)
  * [vim-textobj-datetime](https://github.com/kana/vim-textobj-datetime)
  * [vim-textobj-entire](https://github.com/kana/vim-textobj-entire)
  * [vim-textobj-function](https://github.com/kana/vim-textobj-function)
