@@ -3,6 +3,7 @@
 ao=alsa
 # use X11 for video output
 vo=xv
+lirc=no
 # Set subtitle file encoding
 unicode=yes
 utf8=yes
