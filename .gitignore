@@ -9,4 +9,5 @@ vim/autoload
 vim/backups
 vim/plugged
 vim/.netrwhist
+vim/ycm_extra_conf.pyc
 zsh/cache
