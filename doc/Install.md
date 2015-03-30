@@ -27,6 +27,8 @@ I use i3 as my window manager
 * lm-sensors - CPU temperature, used in conky
 * youtube-dl
 * transmission-cli
+* udisks2 - For mounting
+* htop
 
 ## Firefox 
 
@@ -45,12 +47,21 @@ Plugins used:
 * Syntax
   - [tmux.vim](https://github.com/Keithbsmiley/tmux.vim)
   - [i3-vim-syntax](https://github.com/PotatoesMaster/i3-vim-syntax)
+
 * Git
   - [vim-fugitive](https://github.com/tpope/vim-fugitive)
   - [vim-signify](https://github.com/mhinz/vim-signify)
   - [vim-git](https://github.com/tpope/vim-git)
 * Search
   - [vim-indexed-search](https://github.com/henrik/vim-indexed-search)
+
+* C++
+  - [a.vim](https://github.com/vim-scripts/a.vim)
+  - [YouComleteMe](https://github.com/Valloric/YouComleteMe)
+    - Install clang from repos
+    - Install YCM with: ./install.sh --clang-completer --system-libclang
+    - Laptop may overheat running install.sh, in that case run command with cpulimit -l 30
+    
 * General
   - [matchit.zip](https://github.com/vim-scripts/matchit.zip)
   - [delimitMate](https://github.com/Raimondi/delimitMate)
@@ -65,6 +76,7 @@ Plugins used:
   - [file-line](https://github.com/bogado/file-line)
   - [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
   - [unite.vim](https://github.com/Shougo/unite.vim)
+  - [supertab](https://github.com/ervandew/supertab)
 
 File [vimother](vimother.md) contains plugins and settings that are
 interesting, but not currentky used.
