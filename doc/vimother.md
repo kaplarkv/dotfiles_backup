@@ -9,9 +9,7 @@
  * [vim-expand-region](https://github.com/terryma/vim-expand-region)
 
  * [neocomplete.vim](https://github.com/Shougo/neocomplete.vim)
- * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
  * [syntastic](https://github.com/scrooloose/syntastic)
- * [supertab](https://github.com/ervandew/supertab)
 
  * [limelight.vim](https://github.com/junegunn/limelight.vim)
  * [goyo.vim](https://github.com/junegunn/goyo.vim)
