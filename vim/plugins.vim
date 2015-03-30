@@ -14,6 +14,7 @@ Plug 'henrik/vim-indexed-search'
 
 " C++
 Plug 'vim-scripts/a.vim'
+Plug 'Valloric/YouCompleteMe'
 
 " General
 Plug 'vim-scripts/matchit.zip'
@@ -28,5 +29,7 @@ Plug 'SirVer/ultisnips'
 Plug 'tommcdo/vim-exchange'
 Plug 'bogado/file-line'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'Shougo/unite.vim'
+Plug 'ervandew/supertab'
 
 call plug#end()
