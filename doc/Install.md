@@ -57,7 +57,7 @@ Plugins used:
 
 * C++
   - [a.vim](https://github.com/vim-scripts/a.vim)
-  - [YouComleteMe](https://github.com/Valloric/YouComleteMe)
+  - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
     - Install clang from repos
     - Install YCM with: ./install.sh --clang-completer --system-libclang
     - Laptop may overheat running install.sh, in that case run command with cpulimit -l 30
