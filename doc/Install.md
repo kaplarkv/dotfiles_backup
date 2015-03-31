@@ -110,6 +110,9 @@ interesting, but not currentky used.
   - adobe-source-code-pro-fonts - Currently used
   - ttf-dejavu 
   - ttf-inconsolata 
+* Time
+  - Time is off by one hour after installation
+  - [Fix for this](https://wiki.archlinux.org/index.php/Time#Troubleshooting)
 
 
 ## AUR
