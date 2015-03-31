@@ -1,0 +1,15 @@
+"3.9 (created: 2015/02/15 15:49:05)
+
+" source! /home/kaplar/.vimperatorrc.local
+
+" vim: set ft=vimperator:
+
+" google sugestions
+set complete+=S
+
+set hintchars=abcdefghijklmnopqrstuvwxyz0123456789
+
+inoremap <C-a> <Ins><C-a><Ins>
+
+
+ignorekeys add www\\.inoreader\\.com

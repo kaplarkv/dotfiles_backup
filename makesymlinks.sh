@@ -10,7 +10,7 @@
 dir=~/dotfiles # dotfiles directory
 olddir=~/dotfiles_old # old dotfiles backup directory
 files="gitconfig i3 mpd mplayer ncmpcpp tmux vim vimrc xinitrc Xresources
-zlogin zsh zshenv zshrc"
+zlogin zsh zshenv zshrc vimperatorrc"
 
 ##########
 
