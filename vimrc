@@ -109,6 +109,8 @@ set foldmethod=indent
 set foldnestmax=3
 set nofoldenable " Do not fold by default
 
+nmap <leader>er :tabedit $MYVIMRC<CR>
+
 " Disable arrows
 nnoremap <up> <nop>
 nnoremap <down> <nop>
