@@ -32,4 +32,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'Shougo/unite.vim'
 Plug 'ervandew/supertab'
 
+" Screenwriting
+Plug 'vim-scripts/fountain.vim'
+
 call plug#end()

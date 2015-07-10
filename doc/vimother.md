@@ -65,3 +65,7 @@ Some plugin for interaction with tmux
  * [vim-textobj-rubyblock](https://github.com/nelstrom/vim-textobj-rubyblock)
  * [vim-textobj-function-javascript](https://github.com/thinca/vim-textobj-function-javascript)
  * [argtextobj.vim](https://github.com/vim-scripts/argtextobj.vim)
+
+
+ https://github.com/vimoutliner/vimoutliner
+https://github.com/vim-scripts/fountainwiki.vim

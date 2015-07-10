@@ -14,5 +14,6 @@ if has("gui_running")
   set lines=60
   set columns=190
   set guifont=Source\ Code\ Pro\ 12
-  colorscheme Mustang
+  set background=light
+  colorscheme Google-Primary
 endif

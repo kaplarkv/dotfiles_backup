@@ -10,9 +10,9 @@ short_units yes
 TEXT
 [
   #Finds out if mpd is running. If it is, it provides 1) the current track and 2) bar status. If mpd isn't running it outputs "Not Running"
-  {
-    "full_text": " [${if_mpd_playing} ${mpd_file} ${mpd_bar} ${else} Not Playing ${endif}]", "color":"\#e4f800"
-  },
+  #{
+    #"full_text": " [${if_mpd_playing} ${mpd_file} ${mpd_bar} ${else} Not Playing ${endif}]", "color":"\#e4f800"
+  #},
 
   #Shows current memory usage with a bar
   {

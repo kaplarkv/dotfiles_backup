@@ -124,8 +124,9 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-"set t_Co=256
-colorscheme Mustang
+set t_Co=256
+set background=dark
+colorscheme Google-Primary
 
 "---------- Plugin and additional settings ----------"
 
