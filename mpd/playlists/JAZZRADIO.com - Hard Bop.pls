@@ -1,0 +1,24 @@
+[playlist]
+NumberOfEntries=7
+File1=http://pub4.jazzradio.com:80/jr_hardbop_aacplus?45bb49a546f829c5fe2cb104
+Title1=JAZZRADIO.com - Hard Bop
+Length1=-1
+File2=http://pub6.jazzradio.com:80/jr_hardbop_aacplus?45bb49a546f829c5fe2cb104
+Title2=JAZZRADIO.com - Hard Bop
+Length2=-1
+File3=http://pub2.jazzradio.com:80/jr_hardbop_aacplus?45bb49a546f829c5fe2cb104
+Title3=JAZZRADIO.com - Hard Bop
+Length3=-1
+File4=http://pub8.jazzradio.com:80/jr_hardbop_aacplus?45bb49a546f829c5fe2cb104
+Title4=JAZZRADIO.com - Hard Bop
+Length4=-1
+File5=http://pub5.jazzradio.com:80/jr_hardbop_aacplus?45bb49a546f829c5fe2cb104
+Title5=JAZZRADIO.com - Hard Bop
+Length5=-1
+File6=http://pub1.jazzradio.com:80/jr_hardbop_aacplus?45bb49a546f829c5fe2cb104
+Title6=JAZZRADIO.com - Hard Bop
+Length6=-1
+File7=http://pub7.jazzradio.com:80/jr_hardbop_aacplus?45bb49a546f829c5fe2cb104
+Title7=JAZZRADIO.com - Hard Bop
+Length7=-1
+Version=2

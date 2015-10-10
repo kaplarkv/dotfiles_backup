@@ -13,3 +13,4 @@ inoremap <C-a> <Ins><C-a><Ins>
 
 
 ignorekeys add www\\.inoreader\\.com
+ignorekeys add www\\.deezer\\.com

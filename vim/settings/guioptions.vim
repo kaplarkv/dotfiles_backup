@@ -3,6 +3,7 @@ set guioptions-=r
 set guioptions-=L
 " Disable the toolbar
 set guioptions-=T
+set guioptions-=m
 
 if has("gui_running")
   "tell the term has 256 colors
@@ -14,6 +15,6 @@ if has("gui_running")
   set lines=60
   set columns=190
   set guifont=Source\ Code\ Pro\ 12
-  set background=light
+  set background=dark
   colorscheme Google-Primary
 endif
